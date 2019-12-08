@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>팁</title>
+  </head>
+  <style media="screen">
+
+  #hw{font-size: 30px; align-left;}
+  ul#navi {
+        width: 200px;
+        text-indent: 10px;
+        position: fixed;
+        top:200px;
+        right:40px;
+  }
+    ul#navi, ul#navi ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        text-align: center;
+
+  }
+    li.group {
+        margin-bottom: 3px;
+  }
+  li.group div.maintitle{
+    height: 70px;
+    width: 70px;
+    background:#9ab92e;
+    cursor:pointer;
+    border-radius:500px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right:65px;
+  }
+    li.group div.title {
+        height: 35px;
+        line-height: 35px;
+        background:skyblue;
+        cursor:pointer;
+        border-radius:5px;
+  }
+    ul.sub li {
+        margin-bottom: 2px;
+        height:35px;
+        line-height:35px;
+        background:#f4f4f4;
+        cursor:pointer;
+          border-radius:5px;
+  }
+    ul.sub li a {
+        display: block;
+        width: 100%;
+        height:100%;
+        text-decoration:none;
+        color:#000;
+          border-radius:5px;
+  }
+    ul.sub li:hover {
+        background:#cf0;
+  }
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .menubar ul{
+background: rgba(152,113,7,0.3);
+height:65px;
+list-style:none;
+margin:0;
+padding:0;
+width: 1500px;
+}
+
+.menubar li{
+float:left;
+padding:0px;
+}
+
+.menubar li a{
+
+color:#cccccc;
+display:block;
+font-weight:normal;
+font-size: 25px;
+line-height:65px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgba(255,221,115,0.5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: rgba(255,221,115,0.5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menubar li:hover li a{
+background:none;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
+  </style>
+  <body>
+
+    <div class="menubar">
+      <ul>
+        <li><a href="Main.html">홈</a></li>
+        <li><a href="#">게임 소개</a>
+          <ul>
+            <li> <a href="howto.html">플레이 방법</a> </li>
+            <li> <a href="tips.html">조언</a></li>
+          </ul>
+        </li>
+        <li><a>Dungeon</a>
+          <ul>
+            <li><a href="시나리오던전.html">시나리오 던전</a></li>
+            <li><a href="파밍던전.html">파밍 던전</a></li>
+            <li><a href="레이드던전.html">레이드 던전</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fighter</a>
+          <ul>
+            <li><a href="캐릭터구성.html">구성</a></li>
+            <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+            <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+          </ul>
+          </li>
+      </ul>
+      </div>
+        <div id ="fixed" style="font-size:30px;">
+          <br><br><br><br><br><br><br><br>
+          <ul id="navi">
+            <li class="group">
+
+                <ul class="sub">
+                    <li><a href="#tip1">TIP 1</a></li>
+                    <li><a href="#tip2">TIP 2</a></li>
+                    <li><a href="#tip3">TIP 3</a></li>
+                    <li><a href="#top">TOP</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+
+        <div id ="hw"  align ="center">
+          <a name="top"></a>
+          <br><h2><font color="red"> 그렇다고 이렇게 쉬운 게임을 그냥 하기엔 좀 그렇죠? </font></h2><br>
+          <img src="맨땅.jpg" style="padding:10px;"width="400px;">
+          <h4><font color="yellow">그럼 제가 이번엔 소소한 팁을 드리겠습니다</font></h4>
+          <h5>잘 들어요!</h5>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+        <div id ="hw"  align ="center">
+          <a name="tip1"></a>
+          <br><h2><font color="red"> TIP 1 </font></h2><br>
+          <img src="길드1.jpg" style="padding:10px;"width="500px;">
+          <h4><font color="orange">사람들을 만나서 커뮤니티를 만들어보세요!  </font></h4>
+          <h5><font color="yellow">길드에 들어가서 사람들을 만나세요!<br>길드는 당신을 기다리고 있습니다!<br>그들은 당신이 모르는 것도 알지도 모르죠!!<br>지인이 있는 길드라면 더 좋습니다!<br>사람들과 함께 즐겨 보세요!</font></h5>
+          <img src="길드2.jpg" style="padding:10px;"width="300px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+        <div id ="hw"  align ="center">
+        <a name="tip2"></a>
+        <br><h2><font color="red"> TIP 2 </font></h2><br>
+        <img src="party.jpg" style="padding:10px;"width="550px;">
+        <h4><font color="orange">던파는 혼자하는게 아닙니다! 파티를 만드세요! </font></h4>
+        <h5><font color="yellow">던전이 어렵다고요?<br>모여서 갑시다!<br>믿고 의지할 파티원이 있다면 무서울게 없습니다!<br>각자의 역할을 수행하며 파티에 참여해보세요!<br></font></h5>
+        <img src="party2.jpg" style="padding:10px;"width="600px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+            <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+        <div id ="hw"  align ="center">
+        <a name="tip3"></a>
+        <br><h2><font color="red"> TIP 3 </font></h2><br>
+        <img src="strong.jpg" style="padding:10px;"width="400px;">
+        <h4><font color="orange">강자의 힘을 빌려보세요!  </font></h4>
+        <h5><font color="yellow">파티로도 안되는게 있다고요?<br>그렇다면 강자들을 찾아가세요!<br>그들의 존재감은 거룩하고 막힌 길을 열어줄것입니다!<br>강자들의 힘을 빌려 더욱 빠르게 상위 던전에 진입하세요!<br>당신도 그런 강자가 되어야 하니까요!</font></h5>
+        <img src="strong2.jpg" style="padding:10px;"width="500px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+            <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+  </body>
+</html>

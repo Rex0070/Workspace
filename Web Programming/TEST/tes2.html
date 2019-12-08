@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var i,j;
+
+    for(i=0;i<5;i++)
+    {
+      if(i%2==0)
+      {
+        for(j=0;j<10;j++)  {
+          if(j%2==0)
+          {
+            document.write("_ _");
+          }
+          else if(j%2==1){
+            document.write("*");
+          }
+        }
+      }
+      else
+      {
+        for(j=0;j<10;j++)  {
+          if(j%2==1)
+          {
+            document.write("_ _");
+          }
+          else if(j%2==0){
+            document.write("*");
+          }
+
+        }
+      }
+      document.write("<br>");
+    }
+
+
+    </script>
+  </body>
+</html>

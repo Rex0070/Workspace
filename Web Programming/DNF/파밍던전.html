@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>파밍 던전</title>
+  </head>
+  <style media="screen">
+  #hw{font-size: 30px; align-left;}
+  ul#navi {
+        width: 200px;
+        text-indent: 10px;
+        position: fixed;
+        top:200px;
+        right:40px;
+        font-family: "돋움";
+        font-size: 20px;
+  }
+    ul#navi, ul#navi ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        text-align: center;
+
+  }
+    li.group {
+        margin-bottom: 3px;
+  }
+  li.group div.maintitle{
+    height: 70px;
+    width: 70px;
+    background:#9ab92e;
+    cursor:pointer;
+    border-radius:500px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right:65px;
+  }
+    li.group div.title {
+        height: 35px;
+        line-height: 35px;
+        background:skyblue;
+        cursor:pointer;
+        border-radius:5px;
+  }
+    ul.sub li {
+        margin-bottom: 2px;
+        height:35px;
+        line-height:35px;
+        background:#f4f4f4;
+        cursor:pointer;
+          border-radius:5px;
+  }
+    ul.sub li a {
+        display: block;
+        width: 100%;
+        height:100%;
+        text-decoration:none;
+        color:#000;
+          border-radius:5px;
+  }
+    ul.sub li:hover {
+        background:#cf0;
+  }
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .menubar ul{
+background: rgba(152,113,7,0.3);
+height:65px;
+list-style:none;
+margin:0;
+padding:0;
+width: 1500px;
+}
+
+.menubar li{
+float:left;
+padding:0px;
+}
+
+.menubar li a{
+
+color:#cccccc;
+display:block;
+font-weight:normal;
+font-size: 25px;
+line-height:65px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgba(255,221,115,0.5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: rgba(255,221,115,0.5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menubar li:hover li a{
+background:none;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
+h2{
+  color:red;
+}
+h4{
+  color:orange;
+}
+h5{
+  color:white;
+}
+h6{
+  color:#CF0778;
+}
+  </style>
+  <body>
+    <div class="menubar">
+
+      <ul>
+        <li><a href="Main.html">홈</a></li>
+        <li><a href="#">게임 소개</a>
+          <ul>
+            <li> <a href="howto.html">플레이 방법</a> </li>
+            <li> <a href="tips.html">조언</a></li>
+          </ul>
+        </li>
+        <li><a>Dungeon</a>
+          <ul>
+            <li><a href="시나리오던전.html">시나리오 던전</a></li>
+            <li><a href="파밍던전.html">파밍 던전</a></li>
+            <li><a href="레이드던전.html">레이드 던전</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fighter</a>
+          <ul>
+            <li><a href="캐릭터구성.html">구성</a></li>
+            <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+            <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+          </ul>
+          </li>
+      </ul>
+        </ul>
+      </div>
+        <div id ="fixed" style="font-size:30px;">
+          <br><br><br><br><br><br><br><br>
+          <ul id="navi">
+            <li class="group">
+
+                <ul class="sub">
+                    <li><a href="#차원의 틈">차원의 틈</a></li>
+                    <li><a href="#전설 던전">전설 던전</a></li>
+                    <li><a href="#틈 시리즈">틈 시리즈</a></li>
+                    <li><a href="#탑 시리즈">탑 시리즈</a></li>
+                    <li><a href="#마수 던전">마수 던전</a></li>
+                    <li><a href="#재난 구역">재난 구역</a></li>
+                    <li><a href="#어썰트 모드">어썰트 모드</a></li>
+                    <li><a href="#제국 투기장">제국 투기장</a></li>
+                    <li><a href="#top">TOP</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+
+        <div id ="hw"  align ="center">
+          <a name="top"></a>
+          <br><h2>파밍 던전이란?</font></h2><br>
+          <img src="파밍2.jpg" style="padding:10px;"width="300px;">
+          <img src="파밍4.jpg" style="padding:10px;"width="450px;">
+          <h4>강한 장비를 얻으러 가는 던전</h4>
+          <h5> RPG의 꽃<br>강한 몬스터를 잡아서 재료및 장비를 얻고 점점 성장하는 RPG게임!!<br></font></h5>
+          <h6>그러기 위해서 가는 파밍던전!!<br>던전앤파이터의 파밍던전에 대해 가볍게 훑어보자!!</h6>
+          <img src="파밍1.jpg" style="padding:10px;"width="300px;">
+          <img src="파밍3.jpg" style="padding:10px;"width="450px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+        <div id ="hw"  align ="center">
+          <a name="차원의 틈"></a>
+          <br><h2>차원의 틈 </font></h2><br>
+          <img src="차원의 틈.jpg" style="padding:10px;"width="700px;">
+          <h4> 차원의 틈 - 이계의 강자</h4>
+          <h5>가성비 최고의 던전<br>모든 모험가가 거쳐가는 스위칭의 성지<br>이젠 단기간 내에 레전더리 파밍도 가능<br></font></h5>
+          <h6>난이도 : 매우 쉬움<br>추천 레벨 : LV 85<br>입장 제한 : 하루 5번<br>입장 재료 : 끝없는 영원 5개<br>획득 가능 장비 : 크로니클 장비 / 퀘스트 레전더리 장비 / 차원의 조각 / 고대의 조각 / 황금 큐브</h6>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="전설 던전"></a>
+          <br><h2>전설 던전 </h2><br>
+          <img src="에컨.jpg" style="padding:10px;"width="700px;">
+          <h4>에컨 - 파괴된 신전</h4>
+          <h5>보주도 장비도 타 던전 입장권도 주는 만능 던전<br>차원의 틈과 다르게 귀걸이도 드랍<br>자신의 직업과 딜 타입과 직업에 따라 3가지의 장비 선택 가능<br>꾸준히 가면 손해볼꺼없는 예금형 던전</h5>
+          <h6>난이도 : 보통<br>추천 레벨 : LV 90<br>입장 제한 : 하루 일반 던전 3번 / 히든 던전 1번 <br>입장 재료 : 탄생의 씨앗 5개<br>획득 가능 장비 : 다르마의 상징 / 귀면족의 뿔 / 에컨 레전더리 장비</h6>
+
+
+          <img src="테베.jpg" style="padding:10px;"width="700px;">
+          <h4>테이베르스 - 무너진 낙원</h4>
+          <h5>현재 던파의 최종던전<br>최강의 장비가 당신을 기다리고있습니다<br>디양한 패턴과 즉사기로 파티원간의 호흡과 패턴 숙지가 필요한 던전<br>그럼에도 불구하고 3주만에 최종 무기를 주는 혜자 그 자체의 던전</h5>
+          <h6>난이도 : 매우 어려움<br>추천 레벨 : LV 95<br>입장 제한 : 하루 3번 / 일주일 2번 (총 6번)<br>입장 재료 : 테라니움 15개<br>획득 가능 장비 : 균열 탐지석/ 균열 반응석 / 천공의 카드첩 / 테라니움 / 천공의 조각 / 하늘의 염원 /테이베르스 에픽 장비</h6>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="틈 시리즈"></a>
+          <br><h2>틈 시리즈 </h2><br>
+          <img src="시공의 틈.jpg" style="padding:10px;"width="700px;">
+          <h4>시공의 틈</h4>
+          <h5>빠르게 지옥파티를 클리어 가능<br>찜빔으로 소원빌기(?)도 가능<br>일반 지옥파티보다 더 많은 조각 수급량<br>각 지역마다 있으며 각 지역의 던전이 랜덤으로 등장<br>시간대비 수급이 많은 던전</h5>
+          <h6>난이도 : 쉬움<br>추천 레벨 : LV 75 ~ 90<br>입장 제한 : 없음<br>입장 재료 : 지옥파티 초대장 27 ~ 30 장 <br>획득 가능 장비 : 에픽 조각 / 에픽 장비</h6>
+
+          <img src="마계의 틈.jpg" style="padding:10px;"width="700px;">
+          <h4>마계의 틈</font></h4>
+          <h5>초대장 없이 들어가는 지옥파티<br>네임드 몬스터를 죽이면 에픽 드랍확률 UP<br>추억의 보스 패턴 시전(?)<br>어디서 본 듯한 익숙한 몬스터 친구들 ㅎ <br>초대장 없이 높은 확률로 에픽이 나오는 그야말로 "혜자의 틈"</h5>
+          <h6>난이도 : 보통<br>추천 레벨 : LV 90<br>입장 제한 : 하루 3번<br>입장 재료 : 정제된 테라니움 2개<br>획득 가능 장비 : 에픽 조각/ 에픽 장비</h6>
+
+          <img src="미명의 틈.jpg" style="padding:10px;"width="700px;">
+          <h4>미명의 틈</h4>
+          <h5>할렘이 혜자인 이유 그 자체<br>여기서 에픽이 안 나와도 10일만 돌면 뚝딱<br>어디서 본 듯한 익숙한 친구들 ㅎ(2)<br>예전엔 마틈이 꿀이였다면 현재 꿀은 바로 이곳</h5>
+          <h6>난이도 : 어려움<br>추천 레벨 : LV 95<br>입장 제한 : 하루 3번<br>입장 재료 : 탄생의 씨앗 20개<br>획득 가능 장비 : 이형의 파편 / 이형 결정체 / 할렘 에픽 장비</h6>
+
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="탑 시리즈"></a>
+          <br><h2>탑 시리즈 </h2><br>
+          <img src="절망의 탑.jpg" style="padding:10px;"width="700px;">
+          <h4>절망의 탑</h4>
+          <h5>이름보고 절망할 필요 없음<br>이거 깰라고 한층 한층 무기 바꾸던 시절도 있었지만......<br>현재 만렙이 95레벨인 이 시점에 갈 가치가 더 이상 없는 던전<br></h5>
+          <h6>난이도 : 쉬움<br>추천 레벨 : LV 85<br>입장 제한 : 하루 1번<br>입장 재료 : 없음<br>획득 가능 장비 : 85레벨 장비 / (100층 도달시)절망의 탑 정복 ==> 75 ~ 85레벨 랜덤 에픽 무기 / 65 ~ 85 보조장비 항아리 / 65 ~ 85 마법석 항아리</h6>
+
+          <img src="비탄의 탑.jpg" style="padding:10px;"width="700px;">
+          <h4>비탄의 탑</h4>
+          <h5>비탄의 탑에 이어 나온 무기파밍 던전<br>실제 유저들의 모습을 가져온 특별한 던전<br>몬스터 피통이 조금 많음<br>현재 만렙이 95인 시점에 절망의 탑과 더불어 갈 이유가 없는 던전</h5>
+          <h6>난이도 : 보통<br>추천 레벨 : LV 90<br>입장 제한 : 하루 1번<br>입장 재료 : 없음<br>획득 가능 장비 : 천년의 한걸음 / 천년의 세월 ==> 85 ~ 90 에픽 무기 랜덤 항아리 / 레전더리 ~ 에픽 귀걸이 항아리</h6>
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="마수 던전"></a>
+          <br><h2> 마수 던전 </h2><br>
+          <img src="마수 던전.jpg" style="padding:10px;"width="700px;">
+          <h5>디렉터 최대 실수<br>당시엔 깨라고 만든것인지 의문이 돌 정도로 여론이 안 좋았음<br>허나 종결 스펙을 위해선 반드시 거쳐야하는 던전<br>패턴 하나하나가 죄다 즉사<br>파티원 전체가 숙련된 플레이를 요구하는 던전</h5>
+          <h6>난이도 : 매우 어려움<br>추천 레벨 : LV 90<br>입장 제한 : 하루 3번 / 일주일 2번 (총 6번)<br>입장 재료 : 마수 조사 의뢰서<br>획득 가능 장비 : 신종의 흔적 / 개척의 증표</h6>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="재난 구역"></a>
+          <br><h2> 재난 구역 </h2><br>
+          <img src="재난구역.jpg" style="padding:10px;"width="700px;">
+          <h5>최고의 광부 던전<br>단기간내에 어마어마한 보상과 경험치 획득 가능<br>허나 그에 걸맞는 높은 스펙이 요구<br>던파하는 모든 사람이 거쳐가는 최고의 수급지</h5>
+          <h6>난이도 : 어려움<br>추천 레벨 : LV 95<br>입장 제한 : 없음<br>입장 재료 : 없음 <br>획득 가능 장비 : 난이도 별로(검게 오염된 기운 / 이형의 파편 / 하늘의 염원) / 테라니움</h6>
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="어썰트 모드"></a>
+          <br><h2> 어썰트 모드 </h2><br>
+          <img src="어썰트 모드.jpg" style="padding:10px;"width="700px;">
+          <h5>할렘 에픽의 토대인 할렘 레전더리의 파밍 던전<br>단기간내에 전부위 파밍 가능<br>어마어마하게 쉬운 난이도<br>재료 대량 드랍에 레전더리까지 빠르게 파밍이 끝나는 던전<br></h5>
+          <h6>난이도 : 쉬움<br>추천 레벨 : LV 95<br>입장 제한 : 하루 일반 3번 / 히든 1번 <br>입장 재료 : 탄생의 씨앗 10개<br>획득 가능 장비 : 검게 오염된 기운 / 영웅의 징표 / 할렘 레전더리</h6>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+
+        <div id ="hw"  align ="center">
+          <a name="제국 투기장"></a>
+          <br><h2> 제국 투기장 </h2><br>
+          <img src="제국 투기장.jpg" style="padding:10px;"width="700px;">
+          <h5>고스펙 캐릭터를 2개나 필요한게 입장 조건<br>매일매일 바뀌는 약점속성과 몬스터 순서<br>레이드를 안가고 레이드 장비 파밍 가능<br><del>제국 모놀 만들어주세요 제발</del></h5>
+          <h6>난이도 : 어려움<br>추천 레벨 : LV 90<br>입장 제한 : 없음 (총 6번)<br>입장 재료 : 150,000 골드 <br>획득 가능 장비 : 데 로스 제국 훈장 , 이면의 표식</h6>
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+  </body>
+</html>

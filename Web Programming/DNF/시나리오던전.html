@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>플레이 방법</title>
+  </head>
+  <style media="screen">
+  #hw{font-size: 30px; align-left;}
+  ul#navi {
+        width: 200px;
+        text-indent: 10px;
+        position: fixed;
+        top:200px;
+        right:40px;
+  }
+    ul#navi, ul#navi ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        text-align: center;
+
+  }
+    li.group {
+        margin-bottom: 3px;
+  }
+  li.group div.maintitle{
+    height: 70px;
+    width: 70px;
+    background:#9ab92e;
+    cursor:pointer;
+    border-radius:500px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right:65px;
+  }
+    li.group div.title {
+        height: 35px;
+        line-height: 35px;
+        background:skyblue;
+        cursor:pointer;
+        border-radius:5px;
+  }
+    ul.sub li {
+        margin-bottom: 2px;
+        height:35px;
+        line-height:35px;
+        background:#f4f4f4;
+        cursor:pointer;
+          border-radius:5px;
+  }
+    ul.sub li a {
+        display: block;
+        width: 100%;
+        height:100%;
+        text-decoration:none;
+        color:#000;
+          border-radius:5px;
+  }
+    ul.sub li:hover {
+        background:#cf0;
+  }
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .menubar ul{
+background: rgba(152,113,7,0.3);
+height:65px;
+list-style:none;
+margin:0;
+padding:0;
+width: 1500px;
+}
+
+.menubar li{
+float:left;
+padding:0px;
+}
+
+.menubar li a{
+
+color:#cccccc;
+display:block;
+font-weight:normal;
+font-size: 25px;
+line-height:65px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgba(255,221,115,0.5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: rgba(255,221,115,0.5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menubar li:hover li a{
+background:none;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
+  </style>
+  <body>
+
+    <div class="menubar">
+      <ul>
+        <li><a href="Main.html">홈</a></li>
+        <li><a href="#">게임 소개</a>
+          <ul>
+            <li> <a href="howto.html">플레이 방법</a> </li>
+            <li> <a href="tips.html">조언</a></li>
+          </ul>
+        </li>
+        <li><a>Dungeon</a>
+          <ul>
+            <li><a href="시나리오던전.html">시나리오 던전</a></li>
+            <li><a href="파밍던전.html">파밍 던전</a></li>
+            <li><a href="레이드던전.html">레이드 던전</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fighter</a>
+          <ul>
+            <li><a href="캐릭터구성.html">구성</a></li>
+            <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+            <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+          </ul>
+          </li>
+      </ul>
+      </div>
+        <div id ="fixed" style="font-size:30px;">
+          <br><br><br><br><br><br><br><br>
+          <ul id="navi">
+            <li class="group">
+
+                <ul class="sub"><font size=3px>
+                    <li><a href="#top">TOP</a></li>
+                  </font>
+                </ul>
+            </li>
+        </ul>
+        </div>
+
+
+
+        <a name="top"></a>
+
+        <div id ="hw"  align ="center">
+
+  <br><h2><font color="red"> 던전앤파이터는 시나리오를 진행하면서 경험치를 얻고 진행합니다 </font></h2><br>
+  <img src="퀘스트.jpg" style="padding:10px;"width="850px;">
+  <h4 style="color:#FA0383">퀘스트를 받고 클리어를 위해 던전에 입장하죠</h4>
+
+</div>
+<div align ="center" style="padding-bottom:250px;">
+      <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+      <div id ="hw"  align ="center">
+<br><h2><font color="red">다양한 퀘스트들은 각각의 특별한 보상들이 있죠</font></h2><br>
+<img src="퀘스트1.jpg" style="padding:10px;"width="850px;">
+
+<h4 style="color:#FA0383" >우선 이 '에픽 퀘스트'가 시나리오 퀘스트 입니다</h4>
+</div>
+<div align ="center" style="padding-bottom:250px;">
+    <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br><br><br>던전을 클리어 하면<br>다음과 같은 보상을 선택하게 되고</font></h2><br>
+<img src="퀘스트2.jpg" style="padding:10px;"width="850px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+<a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br><br><br>바로 시나리오를 진행하게 됩니다</font></h2><br>
+<img src="퀘스트3.jpg" style="padding:10px;"width="850px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+<a href="#LV20"><img src="run.png" alt="" width="60px;"></a>
+</div>
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br><br><br><br><br>그럼 '에픽 퀘스트'의 보상을 받게 되고</font></h2><br>
+<img src="퀘스트4.jpg" style="padding:10px;"width="850px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+<a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br><br><br>다음 퀘스트를 바로 받게 됩니다</font></h2><br>
+<img src="퀘스트5.jpg" style="padding:10px;"width="850px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+<a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br><br>이렇게 처음에 보이지 않던 곳이</font></h2><br>
+<img src="맵1.jpg" style="padding:10px;"width="850px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+<a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+
+<div id ="hw"  align ="center">
+<br><h2><font color="red"><br>스토리를 진행하면서 열리게됩니다</font></h2>
+<img src="맵2.jpg" style="padding:10px;"width="900px;">
+</div>
+<div align ="center" style="padding-bottom:250px;">
+  <br><h1><font color="red"><br>이때 열리면서 '에픽 퀘스트'를 클리어하는 던전이 시나리오 던전입니다</font></h1><br><br><br><br><br><br>
+<h3 style="color:red">자세한 시나리오 던전에 대한 정보가 필요하시다면 아래 로고를 클릭해주세요</h3><br><br><br><br><br>
+<a href="http://df.nexon.com/df/guide/TO/865"><img src="logo.png" style="padding:10px;"width="200px;"></a>
+<a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+</div>
+
+
+  </body>
+</html>

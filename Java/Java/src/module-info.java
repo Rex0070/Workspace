@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author SamSung
+ *
+ */
+module Java {
+}

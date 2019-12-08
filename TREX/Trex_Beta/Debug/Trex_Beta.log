@@ -1,0 +1,8 @@
+﻿  Dino.cpp
+c:\users\samsung\onedrive\code\trex\trex_beta\obstacles.cpp(19): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\samsung\onedrive\code\trex\trex_beta\dino.cpp(19): warning C4305: '인수': 'double'에서 'T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+  Trex_Beta.vcxproj -> C:\Users\SamSung\OneDrive\CODE\TREX\Debug\Trex_Beta.exe

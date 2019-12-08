@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>레이드 던전</title>
+</head>
+<style media="screen">
+  #hw {
+    font-size: 30px;
+    align-left;
+  }
+
+  ul#navi {
+    width: 200px;
+    text-indent: 10px;
+    position: fixed;
+    top: 200px;
+    right: 40px;
+    font-family: "돋움";
+    font-size: 20px;
+  }
+
+  ul#navi,
+  ul#navi ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+  }
+
+  li.group {
+    margin-bottom: 3px;
+  }
+
+  li.group div.maintitle {
+    height: 70px;
+    width: 70px;
+    background: #9ab92e;
+    cursor: pointer;
+    border-radius: 500px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right: 65px;
+  }
+
+  li.group div.title {
+    height: 35px;
+    line-height: 35px;
+    background: skyblue;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  ul.sub li {
+    margin-bottom: 2px;
+    height: 35px;
+    line-height: 35px;
+    background: #f4f4f4;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  ul.sub li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+  }
+
+  ul.sub li:hover {
+    background: #cf0;
+  }
+
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+
+  .menubar ul {
+    background: rgba(152, 113, 7, 0.3);
+    height: 65px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1500px;
+  }
+
+  .menubar li {
+    float: left;
+    padding: 0px;
+  }
+
+  .menubar li a {
+
+    color: #cccccc;
+    display: block;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 65px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .menubar li a:hover,
+  .menubar ul li:hover a {
+    background: rgba(255, 221, 115, 0.5);
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .menubar li ul {
+    background: rgb(109, 109, 109);
+    display: none;
+    /* 평상시에는 드랍메뉴가 안보이게 하기 */
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 200px;
+    z-index: 200;
+    /*top:1em;
+/*left:0;*/
+  }
+
+  .menubar li:hover ul {
+    display: block;
+    /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+  }
+
+  .menubar li li {
+    background: rgba(255, 221, 115, 0.5);
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+  }
+
+  .menubar li:hover li a {
+    background: none;
+  }
+
+  .menubar li ul a {
+    display: block;
+    height: 50px;
+    font-size: 12px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px 10px 0px 15px;
+    text-align: left;
+  }
+
+  .menubar li ul a:hover,
+  .menubar li ul li:hover a {
+    background: rgb(71, 71, 71);
+    border: 0px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .menubar p {
+    clear: left;
+  }
+  h1{
+    color:#1D0384;
+  }
+  h2{
+    color:#DF01D7;
+  }
+</style>
+
+<body>
+  <div class="menubar">
+
+    <ul>
+      <li><a href="Main.html">홈</a></li>
+      <li><a href="#">게임 소개</a>
+        <ul>
+          <li> <a href="howto.html">플레이 방법</a> </li>
+          <li> <a href="tips.html">조언</a></li>
+        </ul>
+      </li>
+      <li><a>Dungeon</a>
+        <ul>
+          <li><a href="시나리오던전.html">시나리오 던전</a></li>
+          <li><a href="파밍던전.html">파밍 던전</a></li>
+          <li><a href="레이드던전.html">레이드 던전</a></li>
+        </ul>
+      </li>
+      <li><a href="">Fighter</a>
+        <ul>
+          <li><a href="캐릭터구성.html">구성</a></li>
+          <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+          <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+        </ul>
+        </li>
+    </ul>
+  </div>
+  <div id="fixed" style="font-size:30px;">
+    <br><br><br><br><br><br><br><br>
+    <ul id="navi">
+      <li class="group">
+
+        <ul class="sub">
+          <li><a href="#안톤">안톤 레이드</a></li>
+          <li><a href="#루크">루크 레이드</a></li>
+          <li><a href="#핀드">핀드워</a></li>
+          <li><a href="#top">TOP</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <a name="top"></a>
+  <a name="안톤"></a>
+  <br><br><br><br>
+  <div style="padding:-10;padding-top:50px;" align="right">
+    <img src="각톤.jpg" alt="각성안톤" style="width:650px;" align="right">
+    <div align="left">
+      <h1> 사도 : 불을 먹는 안톤 </h1>
+
+        <h2 align="left">
+          <ol>
+            <li>안톤 입장 조건</li>
+
+            <ol>
+              <br>
+              <li>LV 85 달성시 노블스카이 지역 퀘스트 전부 클리어</li>
+              <br>
+              <li>니엔 시거가 주는 퀘스트 [다른 차원의 안톤] 클리어</li>
+            </ol>
+
+            <br>
+            <li>보스 정보</li>
+            <ul>
+              <br>
+              <li> LV 85 이상 입장 가능 </li>
+              <br>
+              <li> 난이도 : 보통 </li>
+              <br>
+              <li> 위치 : 노블스카이 </li>
+              <br>
+              <li> 특징 :</li>
+              <br>
+             페이즈가 30페이즈가 넘는 국내 최초 최악의 난이도를 자랑했던 던전(보통 다른 게임은 5페이즈 이내)
+              <br><br>
+               일반 안톤에 한 던전에 네임드 셋 보스 하나 던전은 총 5개(네임드 15명 보스 5명;;;;)
+              <br><br>
+               레이드 안톤은 무려 20인이 동시 공략하면서 40분 이내에 클리어해야한다
+              <br><br>
+              당시 나왔을때는 크로니클이 대중적이였기 때문에 크로니클을 들고 안톤에 갔고 탈탈 털려서 왔다......
+              <br><br>
+              <del>그러나 지금 모험가들은 에픽을 온 몸에 달고 있었고......</del>
+            </ul>
+            <br>
+            <li> 드랍 아이템</li>
+            <ul>
+              <br>
+              <li>안토니움</li>
+              <br>
+              <li>응축된 안토니움</li>
+              <br>
+              <li>안톤의 영혼 조각 </li>
+              <br>
+              <li>안톤 레이드 에픽</li>
+            </ul>
+          </ol>
+
+          여담 : <br>'안톤'이 최종보스가 아니다.<br>
+          안톤이라는 <del>자동차를 운전하는</del> 타르탄을 탄 '전능의 마테카'라는 자가 보스다
+          <br><del>웃음소리가 이상해 하/하-하</del><br><br>
+        </h2>
+        <div>
+        </div>
+
+        <h2> </h2>
+    </div>
+
+
+  </div>
+
+
+  <a name="루크"></a>
+  <br><br><br><br>
+  <div style="padding:-10;padding-top:50px;" align="right">
+    <img src="하뤀.jpg" alt="하드루크" style="width:650px;" align="right">
+    <div align="left">
+      <h1> 사도 : 건설자 루크 </h1>
+      <h2 align="left">
+
+        <ol>
+          <li>루크 입장 조건</li>
+
+          <ol>
+            <br>
+            <li>LV 90 달성시 죽은 자의 성 지역 퀘스트 전부 클리어</li>
+            <br>
+            <li>메릴 파이오니어가 주는 퀘스트 [건설자 루크] 클리어</li>
+          </ol>
+
+
+          <br>
+          <li>보스 정보</li>
+          <ul>
+            <br>
+            <li> LV 90 이상 입장 가능 </li>
+            <br>
+            <li> 난이도 : 어려움 </li>
+            <br>
+            <li> 위치 : 죽은 자의 성 </li>
+            <br>
+            <li> 특징 :</li>
+            <br><br>
+             안톤 이후 출시된 실시간형 레이드
+            <br><br>
+             레이드 루크는 처음에 점을 보며 타로카드를 보여주는데 이를 통해 랜덤으로 나오는 보스가 각각 누구인지 유추가 가능하다
+            <br><br>
+             안톤 레이드는 레이드 장비를 주는 반면, 루크는 있는 에픽을 업그레이드를 시켜준다
+            <br><br>
+            안톤과 달리 루크는 나올 당시 90제 에픽을 달고 있는 모험가가 다수여서 패턴만 숙지한다면 클리어하는데 큰 지장이없었다 <br><del>근데 진짜 너무 쉬웠다</del>
+            <br><br>
+            이러한 이유로 하드 루크가 추가 되었고 어느 정도 레이드의 본질을 되찾았다
+          </ul>
+          <br>
+          <li> 드랍 아이템</li>
+          <ul>
+            <br>
+            <li>빛의 근원</li>
+            <br>
+            <li>어둠의 근원</li>
+            <br>
+            <li>모놀리움 </li>
+            <br>
+            <li>정제된 테라니움</li>
+          </ul>
+        </ol>
+
+        여담 :<br>안톤 레이드 상점에서는 장비를 파는것과 달리 루크레이드 상점에서는 (업그레이드)합성법을 판다<br>
+        90제 에픽을 업그레이드 한다고 해 흔히 '업글픽' 이라고 한다<br>
+        루크레이드 악세사리인 헤블론의 군주 세트와 이 업글픽을 모두 맞추는데 1년 반(!!)이 넘는 기간이 걸렸다
+        <br><del>하지만 2달만에 전부위가 파밍가능한 할렘에픽이 더 좋다는 사실이 밝혀지는데...... </del><br><br>
+      </h2>
+      <div>
+      </div>
+
+      <h2> </h2>
+    </div>
+
+
+  </div>
+
+
+  <a name="핀드"></a>
+  <br><br><br><br>
+  <div style="padding:-10;padding-top:50px;" align="right">
+    <img src="끤드.jpg" alt="" style="width:650px;" align="right">
+    <div align="left">
+      <h1> 핀드워 </h1>
+      <h2 align="left">
+
+        <ol>
+          <li>핀드워 입장 조건</li>
+
+          <ol>
+            <br>
+            <li>LV 95 달성시 이후 퀘스트 스킵 및 퀘스트클리어</li>
+            <br>
+            <li>아이리스가 주는 퀘스트 [전선으로] 클리어</li>
+          </ol>
+
+
+          <br>
+          <li>보스 정보</li>
+          <ul>
+            <br>
+            <li> LV 95 이상 입장 가능 </li>
+            <br>
+            <li> 난이도 : 매우 어려움 </li>
+            <br>
+            <li> 위치 : 그란플로리스 </li>
+            <br>
+            <li> 특징 :</li>
+            <br><br>
+             국내 최초 점령형 레이드
+            <br><br>
+             상대방의 전초기지, 레이더, 포탑등을 파괴하면서 버프를 얻거나 상대방에게 디버프를 준다
+            <br><br>
+             위치는 미드 탑 봇으로 나뉘며 탑 봇에 있는 중간보스 처치시 두 명의 최종보스에게 입장한다
+            <br><br>
+            미드에는 상대방의 몬스터와 또 다른 중간보스가 진격한다<br>이를 막아서 팀의 넥서스를 지키면서 플레이 해야하는 전략형 레이드 그 자체
+            <br><br>
+            다른 레이드와 달리 최종 보스의 인격체가 두 개로  나뮈어졌다는 설정 아래 최종 보스가 두 명이 등장하고,<br> 다른 레이드와 달리 적을 '홀딩'해서 때리는 것이 아닌
+            <br>상대방 일방적 공격 ==> 상대방 그로기 ==> 우리팀 일방적 공격 ==> 상대방 일방적 공격 ----
+            <br>이러한 패턴이 돌아간다는게 이때까지의 모든 던전과의 차이점이다
+            <br><br>
+            루크 레이드와 비슷하게 테이베르스 에픽을 업그레이드 시키는 것이 이 레이드의 목적이다
+          </ul>
+          <br>
+          <li> 드랍 아이템</li>
+          <ul>
+            <br>
+            <li>반물질 입자</li>
+            <br>
+            <li>핀드워 카드 상자</li>
+            <br>
+            <li>테이베르스 업글픽 </li>
+
+          </ul>
+        </ol>
+
+        여담 :<br>이때까지의 완전히 새로운 메타로 15초간의 그로기 상태때 데미지를 넣는 방식이라 직업계급의 큰 영향을 끼치게 됬다<br>
+        마을을 이동하며 방에 입장해 클리어 하는 방식 때문에 평소에 걸어다닐떄는 마을 이동속도가 적용된다<br>
+        이 던전은 각 던전의 클리어 제한시간이 있는데 전체 클리어 제한 시간보다 이 때문에 더 골치 아프다
+        <br><del> 이 때문에 처음에 대부분의 공대가 핀드워를 클리어 하는데 최소 2시간 이상 걸렸다고 한다 </del><br><br>
+      </h2>
+      <div>
+      </div>
+
+      <h2> </h2>
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

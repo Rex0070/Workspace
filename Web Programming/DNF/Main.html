@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>환영합니다</title>
+  </head>
+  <style media="screen">
+  h1{
+    font-family:"맑은 고딕"
+  }
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .menubar ul{
+background: rgba(152,113,7,0.3);
+height:65px;
+list-style:none;
+margin:0;
+padding:0;
+width: 1500px;
+}
+
+.menubar li{
+float:left;
+padding:0px;
+}
+
+.menubar li a{
+
+color:#cccccc;
+display:block;
+font-weight:normal;
+font-size: 25px;
+line-height:65px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgba(255,221,115,0.5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: rgba(255,221,115,0.5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menubar li:hover li a{
+background:none;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
+  </style>
+  <body>
+    <script type="text/javascript">
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+     var navbarHeight = $('header').outerHeight();
+      $(window).scroll(function(event){ didScroll = true; });
+       setInterval(function() { if (didScroll) { hasScrolled();
+          didScroll = false;
+      } }, 250);
+     function hasScrolled() {
+        var st = $(this).scrollTop();
+       if(Math.abs(lastScrollTop - st) <= delta) return;
+        if (st > lastScrollTop && st > navbarHeight){ $('header').removeClass('nav-down').addClass('nav-up'); } else { if(st + $(window).height() < $(document).height()) { $('header').removeClass('nav-up').addClass('nav-down');
+       }
+       }
+         lastScrollTop = st;
+       }
+
+    </script>
+    <div class="menubar">
+
+      <ul>
+        <li><a href="Main.html">홈</a></li>
+        <li><a href="#">게임 소개</a>
+          <ul>
+            <li> <a href="howto.html">플레이 방법</a> </li>
+            <li> <a href="tips.html">조언</a></li>
+          </ul>
+        </li>
+        <li><a>Dungeon</a>
+          <ul>
+            <li><a href="시나리오던전.html">시나리오 던전</a></li>
+            <li><a href="파밍던전.html">파밍 던전</a></li>
+            <li><a href="레이드던전.html">레이드 던전</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fighter</a>
+          <ul>
+            <li><a href="캐릭터구성.html">구성</a></li>
+            <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+            <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+          </ul>
+          </li>
+      </ul>
+    </div>
+        <h1 align="center"><font color="yellow">액션쾌감! 던전앤파이터</font></h1>
+        <p align="center" ><video src="[던파] 마계 영상 기록물.mp4" autoplay loop></video></p>
+
+
+  </body>
+</html>

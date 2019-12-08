@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>캐릭터 구성</title>
+  </head>
+  <style media="screen">
+
+  #hw{font-size: 30px; align-left;}
+  ul#navi {
+        width: 200px;
+        text-indent: 10px;
+        position: fixed;
+        top:200px;
+        right:40px;
+  }
+    ul#navi, ul#navi ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        text-align: center;
+
+  }
+    li.group {
+        margin-bottom: 3px;
+  }
+  li.group div.maintitle{
+    height: 70px;
+    width: 70px;
+    background:#9ab92e;
+    cursor:pointer;
+    border-radius:500px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    right:65px;
+  }
+    li.group div.title {
+        height: 35px;
+        line-height: 35px;
+        background:skyblue;
+        cursor:pointer;
+        border-radius:5px;
+  }
+    ul.sub li {
+        margin-bottom: 2px;
+        height:35px;
+        line-height:35px;
+        background:#f4f4f4;
+        cursor:pointer;
+          border-radius:5px;
+  }
+    ul.sub li a {
+        display: block;
+        width: 100%;
+        height:100%;
+        text-decoration:none;
+        color:#000;
+          border-radius:5px;
+  }
+    ul.sub li:hover {
+        background:#cf0;
+  }
+  body {
+    background-image: url('Dnf bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+  .menubar ul{
+background: rgba(152,113,7,0.3);
+height:65px;
+list-style:none;
+margin:0;
+padding:0;
+width: 1500px;
+}
+
+.menubar li{
+float:left;
+padding:0px;
+}
+
+.menubar li a{
+
+color:#cccccc;
+display:block;
+font-weight:normal;
+font-size: 25px;
+line-height:65px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgba(255,221,115,0.5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: rgba(255,221,115,0.5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menubar li:hover li a{
+background:none;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
+h2{
+  color:red;
+}
+h4{
+  color:orange;
+}
+h5{
+  color:white;
+}
+h6{
+  color:#CF0778;
+}
+  </style>
+  <body>
+
+    <div class="menubar">
+      <ul>
+        <li><a href="Main.html">홈</a></li>
+        <li><a href="#">게임 소개</a>
+          <ul>
+            <li> <a href="howto.html">플레이 방법</a> </li>
+            <li> <a href="tips.html">조언</a></li>
+          </ul>
+        </li>
+        <li><a>Dungeon</a>
+          <ul>
+            <li><a href="시나리오던전.html">시나리오 던전</a></li>
+            <li><a href="파밍던전.html">파밍 던전</a></li>
+            <li><a href="레이드던전.html">레이드 던전</a></li>
+          </ul>
+        </li>
+        <li><a href="">Fighter</a>
+          <ul>
+            <li><a href="캐릭터구성.html">구성</a></li>
+            <li><a href="http://df.nexon.com/df/guide/TO/574">캐릭터 소개</a></li>
+            <li><a href="캐릭터추천.html">캐릭터 추천</a></li>
+          </ul>
+          </li>
+      </ul>
+      </div>
+        <div id ="fixed" style="font-size:30px;">
+          <br><br><br><br><br><br><br><br>
+          <ul id="navi">
+            <li class="group">
+
+                <ul class="sub"><font size=3px>
+                    <li><a href="#파티">파티</a></li>
+                    <li><a href="#퓨딜">포지션 - 퓨어 딜러</a></li>
+                    <li><a href="#시너지">포지션 - 시너지</a></li>
+                    <li><a href="#버퍼">포지션 - 버퍼</a></li>
+                    <li><a href="#top">TOP</a></li>
+                  </font>
+                </ul>
+            </li>
+        </ul>
+        </div>
+
+        <a href="top"></a>
+        <div id ="hw"  align ="center">
+          <br><h2><font color="red"> 앞서 말했듯이 던파는 혼자서 사냥만 하는 게임이 아닙니다 </font></h2>
+          <br><h3><font color="red"> 다수의 사람들과 공동체를 이루어서 플레이를 하죠 </font></h2><br>
+          <img src="파티.jpg" style="padding:10px;"width="850px;">
+          <h4><font color="yellow">최대 20명이 같이 가기도 하는 파티위주의 게임에서 캐릭터의 특성을 알아보려고 합니다</font></h4>
+          <h5>이외에도 파티관련 팁들이 있으니 참고해주세요!!</h5>
+          <img src="파티2.jpg" style="padding:10px;"width="850px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+
+        <div id ="hw"  align ="center">
+        <a name="파티"></a>
+        <br><h2><font color="red"> 파티란? </font></h2><br>
+        <img src="party.jpg" style="padding:10px;"width="550px;">
+        <h4><font color="orange">무조건 데미지가 높다고해서 파티가 클리어되진 않습니다!</font></h4>
+        <h5><font color="yellow">던전내에는 최대 4명이 한 파티를 이뤄서 갈 수 있고,<br>4명의 파티원들은 각각 개인별 포지션이 정해져 있죠<br>누군가는 <b><'순수하게 딜'</b>만 하고<br>누군가는 파티원이 더 큰 데미지를 내기 위해 <b>'시너지'</b>를 내주고<br>또 누군가는 파티원이 편하게 클리어하도록 <b>'전폭적으로 서포트'</b>를 해줍니다</font></h5>
+        <h6>이렇게 나뉘어진 포지션에서 뭐가 뭔지 모르겠다고요? 지금부터 각 포지션에 대한 설명을 귀에 쏙쏙 들어오게 해주죠</h6>
+        <img src="party2.jpg" style="padding:10px;"width="600px;">
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+            <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+        <div id ="hw"  align ="center">
+          <a name="퓨딜"></a>
+          <br><h2><font color="red"> 퓨어 딜러 </font></h2><br>
+          <h4><font color="orange">순수하게 데미지만 넣는 포지션</font></h4>
+          <img src="딜러.png" style="padding:10px;"width="350px;">
+          <img src="딜러3.png" style="padding:10px;"width="270px;">
+          <img src="딜러2.png" style="padding:10px;"width="400px;">
+          <img src="딜러4.png" style="padding:10px;"width="350px;">
+          <h5><font color="yellow">퓨어 딜러는 오로지 데미지만 넣습니다<br>이 때문에 몬스터가 죽고 사는 것도 퓨어딜러에게 달렸기 때문에 성패도 퓨어 딜러의 손에 달려 있죠</h5>
+            <img src="딜러5.png" style="padding:10px;"width="350px;">
+            <img src="딜러6.png" style="padding:10px;"width="350px;">
+            <img src="딜러7.png" style="padding:10px;"width="400px;">
+          <h5><font color="yellow">던파에서 대부분의 직업들이 퓨어 딜러에 속하고 퓨어 딜러 중에서도 딜을 넣는 방식, 속성에 따라 나뉘기도 합니다 <br>지속적으로 딜을 넣는 '지딜', 순간적으로 스킬을 퍼 붓는 '순딜', 한방 한방 묵직하게 큰 딜을 넣는 '폭딜'로 나뉘어지죠<br><del>인구 수가 많아서 취직이 힘듦...크흠....</del></font></h5>
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+        <div id ="hw"  align ="center">
+          <a name="시너지"></a>
+          <br><h2><font color="red"> 시너지 </font></h2><br>
+          <h4><font color="orange">팀에서 다양한 역할을 맡는 포지션</font></h4>
+          <img src="시너지1.png" style="padding:10px;"width="400px;">
+          <img src="시너지2.png" style="padding:10px;"width="400px;">
+          <img src="시너지3.png" style="padding:10px;"width="400px;">
+          <h5><font color="yellow">시너지는 파티원에게 이로운 버프를 주거나 상대방에게 디버프를 부여합니다<br>그와 동시에 데미지를 넣거나 몬스터를 홀딩, 혹은 아군을 지켜주는 등 다양한 역할을 도맡아서 합니다</h5>
+            <img src="시너지5.png" style="padding:10px;"width="400px;">
+            <img src="시너지6.png" style="padding:10px;"width="400px;">
+            <img src="시너지4.png" style="padding:10px;"width="400px;">
+          <h5><font color="yellow">퓨딜에 비해서 인구수가 적지만 파티의 50%의 지분을 차지할 정도로 입지가 상당히 좋습니다<br><del>인구수가 많은 퓨딜보다 좋습니다</del><br>시너지를 하면서 몬스터를 홀딩하는 '시너지 홀딩',<br> 시너지를 하며 딜을 넣는 '시너지 딜러', 또 시너지를 하면서 다양한 버프 및 아군을 지키는 '시너지 유틸'로 나뉘어 집니다.<br>저는 퓨딜보다 더 인식이 좋고 더 많이 찾는 시너지 캐릭터를 먼저 키워보시는 것을 추천드립니다</font></h5>
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+        <div id ="hw"  align ="center">
+          <a name="버퍼"></a>
+          <br><h2><font color="red"> 버퍼 </font></h2><br>
+          <h4><font color="orange">아군에게 보호하면서 강하게 만들어주며 서포트해주는 포지션</font></h4>
+          <img src="버퍼1.png" style="padding:10px;"width="650px;">
+          <h5><font color="yellow">버퍼는 아군을 강력하게 만들면서 보호해주며 파티를 이끌어주는 포지션입니다<br>아군이 죽어도 살리고, 강력하게 만들어 클리어 시간을 줄이거나, 체력이 부족한 아군을 치료하고 방어력을 올리는 든든한 존재입니다</h5>
+            <img src="버퍼2.jpg" style="padding:10px;"width="650px;">
+          <h5><font color="yellow">문제는 이런 버퍼를 맡은 직업이 던파 59개의 직업중 <br><b>단 2개</b> 라는 것이 문제점이죠<br>그 어느 직업보다 인구수가 많지만 그렇다고 해서 모든 파티를 커버할수는 없죠<br>버퍼를 필수적으로 데려가야하는 구조에서 돈을 주면서까지 구하는 와중에 버퍼의 인구수를 늘리거나 다른 대책을 세우지 않으면 의존도가 높아져 썩 미래가 밝지 않습니다<br><del>그러니 지금 당장하세요 롸잇나우</del></font></h5>
+
+
+        </div>
+        <div align ="center" style="padding-bottom:250px;">
+              <a href="#LV20"><img src="go.png" alt="" width="60px;"></a>
+        </div>
+
+
+  </body>
+</html>

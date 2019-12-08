@@ -1,0 +1,7 @@
+﻿  exercise_9.cpp
+c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(28): error C2248: 'triangle::b': private 멤버('triangle' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(7): note: 'triangle::b' 선언을 참조하십시오.
+  c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(4): note: 'triangle' 선언을 참조하십시오.
+c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(28): error C2248: 'triangle::h': private 멤버('triangle' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(7): note: 'triangle::h' 선언을 참조하십시오.
+  c:\users\samsung\onedrive\code\c++\어서와 c++\chpater 4\exercise_9\exercise_9.cpp(4): note: 'triangle' 선언을 참조하십시오.

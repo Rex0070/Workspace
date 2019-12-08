@@ -1,0 +1,19 @@
+﻿  Dino.cpp
+c:\users\samsung\desktop\trex_beta\obstacles.cpp(14): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\samsung\desktop\trex_beta\dino.cpp(10): warning C4305: '인수': 'double'에서 'T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+  Game.cpp
+c:\users\samsung\desktop\trex_beta\obstacles.cpp(14): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\samsung\desktop\trex_beta\dino.cpp(10): warning C4305: '인수': 'double'에서 'T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+  Level.cpp
+  Obstacles.cpp
+c:\users\samsung\desktop\trex_beta\obstacles.cpp(14): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Trex_Beta.vcxproj -> C:\Users\SamSung\Desktop\Debug\Trex_Beta.exe
